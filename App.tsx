@@ -36,13 +36,19 @@ const NewsList = ({ items }: { items: NewsItem[] }) => (
   </div>
 );
 
+// --- 核心修复部分：AwardsList 组件 ---
 const AwardsList = ({ items }: { items: AwardItem[] }) => (
   <div className="space-y-3">
     {items.map((award) => (
       <div key={award.id} className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
         <div className="flex-1">
           <span className="font-bold text-academic-900 text-sm">{award.title}</span>
-          <span className="text-academic-600 text-sm ml-2">({award.organization})</span>
+          
+          {/* 只有当 organization 存在时，才渲染括号和内容 */}
+          {award.organization && (
+            <span className="text-academic-600 text-sm ml-2">({award.organization})</span>
+          )}
+          
           {award.description && <p className="text-xs text-academic-500 mt-0.5">{award.description}</p>}
         </div>
         <span className="text-xs font-mono text-academic-500 shrink-0">{award.year}</span>
@@ -74,7 +80,6 @@ function App() {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('about');
 
-  // Validate language, redirect to English if invalid
   if (lang !== 'en' && lang !== 'zh') {
     return <Navigate to="/en" replace />;
   }
@@ -92,11 +97,10 @@ function App() {
     label: s.navLabel || s.title
   }));
 
-  // Simple scroll spy to update active sidebar link
   useEffect(() => {
     const handleScroll = () => {
       const sections = navSections.map(s => s.id);
-      const scrollPosition = window.scrollY + 200; // Offset
+      const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -112,10 +116,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-[15px]">
-      {/* Container */}
       <div className="flex max-w-7xl mx-auto">
-        
-        {/* Sidebar Navigation (Left) */}
         <Sidebar 
           activeSection={activeSection} 
           profile={PROFILE} 
@@ -124,10 +125,7 @@ function App() {
           setLang={setLang}
         />
 
-        {/* Main Content (Right) */}
         <main className="flex-1 w-full md:pl-72 lg:pl-80 pt-16 md:pt-0">
-          
-          {/* Top Navigation for Desktop */}
           <nav className="hidden md:flex sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-academic-100 px-12 py-4 gap-8 overflow-x-auto custom-scrollbar">
             {navSections.map((section) => (
               <button
@@ -153,7 +151,6 @@ function App() {
                 return (
                   <section id="about" key="about" className="scroll-mt-24 mb-12">
                     <h2 className="sr-only">About</h2>
-                    {/* Mobile Header (Repeated info for mobile since sidebar is hidden) */}
                     <div className="md:hidden mb-8 text-center">
                       <img src="images/profile/me.jpg" alt={PROFILE.name} className="w-28 h-36 rounded-[50%] mx-auto mb-4 object-cover ring-2 ring-academic-100" />
                       <h1 className="font-serif text-xl font-bold text-academic-900">{PROFILE.name}</h1>
@@ -225,7 +222,6 @@ function App() {
               );
             })}
 
-            {/* Footer */}
             <footer className="mt-24 pt-8 border-t border-academic-100 text-center text-academic-400 text-xs">
               <p>&copy; {new Date().getFullYear()} {PROFILE.name}. Powered by React Scholar.</p>
               <p className="mt-1">Site last updated: {PROFILE.lastUpdated}</p>
