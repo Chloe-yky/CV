@@ -46,7 +46,7 @@ export const data = {
         title: 'Education', 
         type: 'timeline', 
         content: [
-          { id: 'ed1', role: "Undergraduate Student", organization: "NanKan University", period: "2022 - present", description: "Major: Automation" },
+          { id: 'ed1', role: "Undergraduate Student", organization: "NanKai University", period: "2022 - present", description: "Major: Automation" },
           { id: 'ed2', role: "Senior High Student", organization: "Hengyang No.8 High School", period: "2019 - 2022", description: "An unforgettable experience" },
           ] 
       },
