@@ -46,7 +46,7 @@ export const data = {
         title: 'Education', 
         type: 'timeline', 
         content: [
-          { id: 'ed1', role: "Undergraduate Student", organization: "NanKan University", period: "2024 - present", description: "Major: Automation" },
+          { id: 'ed1', role: "Undergraduate Student", organization: "NanKan University", period: "2022 - present", description: "Major: Automation" },
           { id: 'ed2', role: "Senior High Student", organization: "Hengyang No.8 High School", period: "2019 - 2022", description: "An unforgettable experience" },
           ] 
       },
@@ -76,8 +76,7 @@ export const data = {
         { platform: 'email', url: 'mailto:yangkeyi.chloe@outlook.com' },
         // { platform: 'scholar', url: 'https://scholar.google.com', username: 'Google Scholar' },
         { platform: 'github', url: 'https://github.com/Chloe-yky', username: 'GitHub' },
-        { platform: 'zhihu', url: 'https://www.zhihu.com/people/74-44-50-26-39', username: '知乎' },
-        { platform: 'xiaohongshu', url: 'https://www.xiaohongshu.com/user/profile/692941e000000000380194d0', username: '小红书' },
+        { platform: 'xiaohongshu', url: 'https://www.xiaohongshu.com/user/profile/5f1e5be20000000001008ad8', username: '小红书' },
       ],
       lastUpdated: "2026-03-14"
     } as ProfileData,
@@ -99,7 +98,7 @@ export const data = {
         title: '教育背景', 
         type: 'timeline', 
         content: [
-          { id: 'ed1', role: "本科生", organization: "南开大学（Nanjing University)", period: "2022 - 至今", description: "专业：自动化" },
+          { id: 'ed1', role: "本科生", organization: "南开大学（NanKai University)", period: "2022 - 至今", description: "专业：自动化" },
           { id: 'ed2', role: "高中生", organization: "衡阳市第八中学", period: "2019 - 2022", description: "这是一段难忘的回忆" },
         ] 
       },
