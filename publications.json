@@ -1,0 +1,36 @@
+{
+  "en": [
+    {
+      "id": "p1",
+      "title": "There will be my first paper!!!",
+      "authors": ["Keyi Yang"],
+      "venue": "ACL",
+      "year": 2026,
+      "highlight": true,
+      "thumbnail": "images/publications/paper.png",
+      "abstract": "This is the abstract of my first paper. It describes the main contributions and findings of the research.",
+      "links": [
+        { "label": "PDF", "url": "#", "type": "pdf" },
+        { "label": "Code", "url": "#", "type": "code" },
+        { "label": "Project Page", "url": "#", "type": "external" }
+      ]
+    }
+  ],
+  "zh": [
+    {
+      "id": "p1",
+      "title": "There will be my first paper!!!",
+      "authors": ["阳珂怡"],
+      "venue": "ACL",
+      "year": 2026,
+      "highlight": true,
+      "thumbnail": "images/publications/paper.png",
+      "abstract": "我会马上有自己的论文的！",
+      "links": [
+        { "label": "PDF", "url": "#", "type": "pdf" },
+        { "label": "代码", "url": "#", "type": "code" },
+        { "label": "项目主页", "url": "#", "type": "external" }
+      ]
+    }
+  ]
+}
