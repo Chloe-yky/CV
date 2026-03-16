@@ -11,7 +11,7 @@ export const data = {
       email: "yangkeyi.chloe@outlook.com",
       location: "Tianjing, China",
       bio: `
-      Hi, I'm Keyi YangI’m a really careful and thoughtful person who likes things clear and nice. I’m super patient and always try my best to do everything well. Even though I’m logical, I’m also warm and sincere inside. I’m the kind of person who’s easy to get along with, gentle and reliable, and always ready to cheer up the people around me~      `,
+    Hello, I'm Yang Keyi. I'm a meticulous and considerate person who likes to keep things clear and organized. I'm extremely patient and always give my all to whatever I do. Although I'm a bit serious in daily life, I have a gentle and sincere heart and am easy to get along with. I have a mild and reliable personality and will quietly bring warmth to those around me.    `,
       researchInterests: [
         "Control Engineering",
   
@@ -34,7 +34,7 @@ export const data = {
         title: 'Awards & Honors', 
         type: 'awards', 
         content: [
-          { id: 'aw1', title: "Jiangsu Provincial Third Prize, Contemporary Undergraduate Mathematical Contest in Modeling",organization: "China Society for Industrial and Applied Mathematics",year: " Sep 2025"},
+          { id: 'aw1', title: 'Third Prize of the "Challenge Cup" Tianjin University Students' Extracurricular Academic and Technological Works Competition',year: " Sep 2025"},
         ] 
       },
       { 
@@ -42,8 +42,8 @@ export const data = {
         title: 'Education', 
         type: 'timeline', 
         content: [
-          { id: 'ed1', role: "Undergraduate Student", organization: "Nanjing University", period: "2024 - present", description: "Major: Mathematics" },
-          { id: 'ed2', role: "Senior High Student", organization: "Hengyang No.8 High School", period: "2021 - 2024", description: "An unforgettable experience" },
+          { id: 'ed1', role: "Undergraduate Student", organization: "NanKan University", period: "2024 - present", description: "Major: Automation" },
+          { id: 'ed2', role: "Senior High Student", organization: "Hengyang No.8 High School", period: "2019 - 2022", description: "An unforgettable experience" },
           ] 
       },
       { 
