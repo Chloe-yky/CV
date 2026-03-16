@@ -1,12 +1,12 @@
 {
   "en": [
-    { "id": "1", "date": "Mar 2026", "content": "Follow **Gemini Lab** to learn" }
-    { "id": "2", "date": "Mar 2026", "content": "Follow **Jiayi Gong Lab** to learn" }
+    { "id": "1", "date": "Mar 2026", "content": "Follow **Gemini Lab** to learn" },
+    { "id": "2", "date": "Mar 2026", "content": "Follow **Jiayi Gong Lab** to learn" },
     { "id": "3", "date": "Mar 2026", "content": "Follow **Yuhang Yang Lab** to learn" }
   ],
   "zh": [
-       { "id": "1", "date": "Mar 2026", "content": "Follow **Gemini Lab** to learn" }
-    { "id": "2", "date": "Mar 2026", "content": "Follow **Jiayi Gong Lab** to learn" }
-    { "id": "3", "date": "Mar 2026", "content": "Follow **Yuhang Yang Lab** to learn" }
+    { "id": "1", "date": "2026年3月", "content": "关注 **Gemini 实验室** 学习" },
+    { "id": "2", "date": "2026年3月", "content": "关注 **龚嘉怡实验室** 学习" },
+    { "id": "3", "date": "2026年3月", "content": "关注 **杨宇航实验室** 学习" }
   ]
 }
