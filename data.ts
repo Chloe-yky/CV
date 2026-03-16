@@ -34,7 +34,11 @@ export const data = {
         title: 'Awards & Honors', 
         type: 'awards', 
         content: [
-          { id: 'aw1', title: 'Third Prize of the "Challenge Cup" Tianjin University Students' Extracurricular Academic and Technological Works Competition',year: " Sep 2025"},
+         { 
+  id: 'aw1', 
+  title: `Third Prize of the "Challenge Cup" Tianjin University Students' Extracurricular Academic and Technological Works Competition`, 
+  year: "Sep 2025" 
+},
         ] 
       },
       { 
