@@ -1,8 +1,13 @@
 {
   "en": [
-    { "id": "1", "date": "Mar 2026", "content": "Follow **gemini gjy yyh** to learn" }
+    { "id": "1", "date": "Mar 2026", "content": "Follow **Gemini Lab** to learn" }
+    { "id": "2", "date": "Mar 2026", "content": "Follow **Jiayi Gong Lab** to learn" }
+    { "id": "3", "date": "Mar 2026", "content": "Follow **Yuhang Yang Lab** to learn" }
+  ],
   ],
   "zh": [
-    { "id": "1", "date": "2026年3月", "content": "跟随 **gemini gjy yyh** 进行学习" }
+       { "id": "1", "date": "Mar 2026", "content": "Follow **Gemini Lab** to learn" }
+    { "id": "2", "date": "Mar 2026", "content": "Follow **Jiayi Gong Lab** to learn" }
+    { "id": "3", "date": "Mar 2026", "content": "Follow **Yuhang Yang Lab** to learn" }
   ]
 }
